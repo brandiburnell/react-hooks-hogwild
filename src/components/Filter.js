@@ -1,11 +1,14 @@
 import React from "react";
 
-function Filter() {
+function Filter({onFilter}) {
     return (
-        <select>
-            <option>Option 1</option>
-            <option>Option 2</option>
-        </select>
+        <div className="filterWrapper">
+            <select onChange={onFilter}>
+                <option>All Hogs</option>
+                <option>Greased Hogs</option>
+            </select>
+        </div>
+
     )
 }
 
